@@ -4,6 +4,7 @@
 
 
 using namespace std;
+//The objective function
 double f(vector<double>* nPoints){
 
     double x1 = (*nPoints)[0];
@@ -102,7 +103,7 @@ public:
     }
 
 private:
-    /* makes the derivation by the followin formula:
+    /* makes the derivation by the following formula:
      * f'(xth_i) = [f(xth + h) - f(xth)] / h
     */
     double computeGradient(int i){
